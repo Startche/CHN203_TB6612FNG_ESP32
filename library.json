@@ -1,0 +1,39 @@
+{
+    "$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
+    "name": "CHN203_ESP32",
+    "version": "0.0.1",
+    "description": "Controle de posição e velocidade de um motor usando a placa CH-N20-3 em conjunto com um driver TB6612FNG e um ESP32",
+    "keywords": ["motor", "encoder", "control"],
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/Startche/CHN203_TB6612FNG_ESP32"
+    },
+    "authors":
+    [
+      {
+        "name": "Lucas Klement Reinehr",
+        "email": "lucasklementr@gmail.com"
+      }
+    ],
+    "frameworks": "Arduino",
+    "platforms": "espressif32",
+    "headers": "TB6612FNG_ESP32.h",
+    "examples": [
+        {
+          "name": "TB6612FNG_MotorTestRun",
+          "base": "examples/TB6612FNG_MotorTestRun",
+          "files": ["TB6612FNG_MotorTestRun.cpp"]
+        },
+        {
+          "name": "TB6612FNG_SetPosition",
+          "base": "examples/TB6612FNG_SetPosition",
+          "files": ["TB6612FNG_SetPosition.cpp"]
+        },
+        {
+          "name": "TB6612FNG_SetSpeed",
+          "base": "examples/TB6612FNG_SetSpeed",
+          "files": ["TB6612FNG_SetSpeed.cpp"]
+        }
+    ]
+}
